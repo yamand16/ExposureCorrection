@@ -27,6 +27,10 @@ We utilized four different low-light image datasets to evaluate our model and co
 
 ## Testing ##
 
+## Evaluation ##
+
+We implemented PSNR, SSIM, and PI metrics using Python. You can also find the original Matlab implementation of PI metric <a href="https://github.com/roimehrez/PIRM2018">in this page</href>. Please follow the instructions to run the original implementation.
+
 ## Results ##
 
 ## References ##
