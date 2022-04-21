@@ -13,10 +13,10 @@
 ## Datasets ##
 
 ### Exposure correction dataset ###
-In order to download the corresponding exposure correction dataset [1], please visit <a href="https://github.com/mahmoudnafifi/Exposure_Correction#dataset">this link</href>
+In order to download the corresponding exposure correction dataset [1], please visit [this link.](https://github.com/mahmoudnafifi/Exposure_Correction#dataset)
 
 ### Low-light image datasets ###
-We utilized four different low-light image datasets to evaluate our model and compare with other works.
+We utilized four different low-light image datasets to evaluate our model and compare with other works. You can use the following links to access to these datasets.
 
 1. LIME [2]
 2. NPE [3]
@@ -29,7 +29,7 @@ We utilized four different low-light image datasets to evaluate our model and co
 
 ## Evaluation ##
 
-We implemented PSNR, SSIM, and PI metrics using Python. You can also find the original Matlab implementation of PI metric <a href="https://github.com/roimehrez/PIRM2018">in this page</href>. Please follow the instructions to run the original implementation.
+We implemented PSNR, SSIM, and PI metrics using Python. You can also find the original Matlab implementation of PI metric [in this GitHub project.](https://github.com/roimehrez/PIRM2018) Please follow the corresponding instructions to run the original implementation.
 
 ## Results ##
 
