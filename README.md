@@ -33,7 +33,7 @@ NPE [3]  | 75
 VV [4]   | 24
 DICM [5] | 44
 
-You can download all these datasets from [this link](https://github.com/VITA-Group/EnlightenGAN) or from [this link.](https://daooshee.github.io/BMVC2018website/). We followed the literature and used the same setup.
+You can download all these datasets from [this link.](https://daooshee.github.io/BMVC2018website/) or from [this link](https://github.com/VITA-Group/EnlightenGAN). We followed the literature and used the same setup.
 
 ## Training ##
 
