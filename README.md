@@ -16,12 +16,16 @@
 In order to download the corresponding exposure correction dataset [1], please visit [this link.](https://github.com/mahmoudnafifi/Exposure_Correction#dataset)
 
 ### Low-light image datasets ###
-We utilized four different low-light image datasets to evaluate our model and compare with other works. You can use the following links to access to these datasets.
+We utilized four different low-light image datasets to test and evaluate our model and compare with other works.
 
-1. LIME [2]
-2. NPE [3]
-3. VV [4]
-4. DICM [5]
+Dataset   | Number of images
+:------- | :--------------:
+LIME [2] | 10 
+NPE [3]  | 75
+VV [4]   | 24
+DICM [5] | 44
+
+You can download all these datasets from [this link](https://github.com/VITA-Group/EnlightenGAN) or from [this link.](https://daooshee.github.io/BMVC2018website/). We followed the literature and used the same setup.
 
 ## Training ##
 
