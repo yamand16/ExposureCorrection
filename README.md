@@ -10,11 +10,7 @@ This paper will be published in [CVPR 2022](https://cvpr2022.thecvf.com/) [NTIRE
 
 ### TODO ###
 
-1. Additional results
-2. Evaluation metrics and Python implementation of PI metric
-3. Test code
-4. Pretrained model
-5. Training code
+We are preparing our code and pretrained model.
 
 ## Prerequests ##
 
