@@ -10,7 +10,7 @@ This paper will be published in [CVPR 2022](https://cvpr2022.thecvf.com/) [NTIRE
 
 ### TODO ###
 
-We are preparing our code and pretrained model.
+Codes and demo will be shared after the NTIRE 2022 workshop will take place in CVPR 2022.
 
 ## Prerequests ##
 
