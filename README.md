@@ -52,6 +52,8 @@ CUDA_VISIBLE_DEVICES="0" python test.py
 
 We implemented PSNR, SSIM, and PI metrics using Python. You can also find the original Matlab implementation of PI metric [in this GitHub project.](https://github.com/roimehrez/PIRM2018) Please follow the corresponding instructions to run the original implementation.
 
+Although we did not provide some common metrics for portrait matting such as SAD, Gradient, Connectivity due to space limitation, we observed the same situation that we presented with MSE and MAE. When we change the exposure setting, all these metrics increase. After we correct the exposure setting, portrait matting models work better and all these metrics decrease.
+
 ```python
 python evaluate_exposure.py --images_path1 ../dataset/exposure_correction/test/expert_a_testing_set --images_path2 predicted_images --metric all
 ```
