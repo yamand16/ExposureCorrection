@@ -146,7 +146,7 @@ class Pix2PixHDModel(BaseModel):
         if self.opt.l1_image_loss:# and (not self.opt.is_style_encoder):
             loss_G_Image = self.criterionFeat(fake_image, real_image) * self.opt.l1_image_loss_coef
 
-        return [ self.loss_filter(loss_G_GAN, loss_G_GAN_Feat, loss_G_VGG, loss_G_Image, loss_D_real, loss_D_fake), None if not infer else fake_image, None]
+        return [ self.loss_filter(loss_G_GAN, loss_G_GAN_Feat, loss_G_VGG, loss_G_Image, loss_D_real, loss_D_fake), fake_image]
 
     def inference(self, label, image=None):
         # Encode Inputs        
@@ -188,7 +188,7 @@ class Pix2PixHDModel(BaseModel):
         self.old_lr_D = lr_D
 
 class InferenceModel(Pix2PixHDModel):
-    def forward(self, inp, inp2 = None, is_style_encoder=False, use_segmentation_map_as_input=False, seg_map_input=None):
+    def forward(self, inp):
         label, inst = inp
         return self.inference(label, inst)
 
