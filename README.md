@@ -6,7 +6,7 @@
 
 <sup>1</sup>Karlsruhe Institute of Technology, <sup>2</sup>Istanbul Technical University, <sup>3</sup>Carnegie Mellon University
 
-This paper will be published in [CVPR 2022](https://cvpr2022.thecvf.com/) [NTIRE Workshop](https://data.vision.ee.ethz.ch/cvl/ntire22/). If you use our code or the paper is helpful for your research, please cite our paper.
+This paper is published in [CVPR 2022](https://cvpr2022.thecvf.com/) [NTIRE Workshop](https://data.vision.ee.ethz.ch/cvl/ntire22/). If you use our code or the paper is helpful for your research, please cite our paper.
 
 ### TODO ###
 
