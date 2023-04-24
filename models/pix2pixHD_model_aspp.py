@@ -107,9 +107,9 @@ class Pix2PixHDModel(BaseModel):
         # Fake Generation    
         fake_image = self.netG.forward(input_concat)
 
-        disc_fake = fake_image.copy()
-        disc_input = input_concat.copy()
-        disc_real = real_image.copy()
+        disc_fake = fake_image.clone()
+        disc_input = input_concat.clone()
+        disc_real = real_image.clone()
 
         pred_fake_pool = self.discriminate(disc_input, disc_fake, use_pool=True, is_single_input=self.opt.single_input_D)
         loss_D_fake = self.criterionGAN(pred_fake_pool, False)
@@ -144,7 +144,7 @@ class Pix2PixHDModel(BaseModel):
         # L1 image comparison
         loss_G_Image = 0
         if self.opt.l1_image_loss:# and (not self.opt.is_style_encoder):
-            loss_G_Image = self.criterionL1Image(fake_image, real_image) * self.opt.l1_image_loss_coef
+            loss_G_Image = self.criterionFeat(fake_image, real_image) * self.opt.l1_image_loss_coef
 
         return [ self.loss_filter(loss_G_GAN, loss_G_GAN_Feat, loss_G_VGG, loss_G_Image, loss_D_real, loss_D_fake), None if not infer else fake_image, None]
 
