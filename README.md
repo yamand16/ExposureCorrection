@@ -42,11 +42,15 @@ You can download all these datasets from [this link.](https://daooshee.github.io
 
 ## Training ##
 
+```python
+CUDA_VISIBLE_DEVICES="0" python train.py --name experiment_name --checkpoints_dir checkpoints --batchSize 32 --loadSize 256 --fineSize 256 --label_nc 3 --output_nc 3 --dataroot data_folder_name --no_flip --dir_A input_folder_name --dir_B ground_truth_folder_name --ngf 64 --n_downsample_global 4 --n_blocks_global 9 --spectral_normalization_D --l1_image_loss --num_D 3 --ndf 64 
+```
+
 ## Testing ##
 
 
 ```python
-CUDA_VISIBLE_DEVICES="0" python test.py 
+CUDA_VISIBLE_DEVICES="0" python test.py --ntest 1000 --results_dir exposure_output --checkpoints_dir checkpoints --name exposure_correction_experiment --loadSize 256 --fineSize 256 --dataroot dataset/exposure/test --dir_A INPUT_Images --no_flip --label_nc 3 --how_many 1000 --phase_test_type test_all --which_epoch 100 --netG global --ngf 64 --n_downsample_global 4 --n_blocks_global 9 --batchSize 1
 ```
 
 ## Evaluation ##
@@ -83,6 +87,8 @@ We also employed three different state-of-the-art portrait matting models that d
 ![portrait matting](/images/matting.png)
 
 ## Acknowledgement
+
+This code is based on [Pix2PixHD](https://github.com/NVIDIA/pix2pixHD) implementation. We would like to thanks the authors for sharing their valuable codes.
 
 ## References ##
 
