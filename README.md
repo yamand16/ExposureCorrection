@@ -42,7 +42,7 @@ You can download all these datasets from [this link.](https://daooshee.github.io
 ## Training ##
 
 ```python
-CUDA_VISIBLE_DEVICES="0" python train.py --name experiment_name --checkpoints_dir checkpoints --batchSize 32 --loadSize 256 --fineSize 256 --label_nc 3 --output_nc 3 --dataroot data_folder_name --no_flip --dir_A input_folder_name --dir_B ground_truth_folder_name --ngf 64 --n_downsample_global 4 --n_blocks_global 9 --spectral_normalization_D --l1_image_loss --num_D 3 --ndf 64 
+CUDA_VISIBLE_DEVICES="0" python train.py --name experiment_name --checkpoints_dir checkpoints --batchSize 32 --loadSize 256 --fineSize 256 --label_nc 3 --output_nc 3 --dataroot data_folder_name --no_flip --read_from_file --file_name_A train_input.txt --file_name_B train_gt_full.txt --ngf 64 --n_downsample_global 4 --n_blocks_global 9 --spectral_normalization_D --l1_image_loss --num_D 3 --ndf 64 
 ```
 
 ## Testing ##
