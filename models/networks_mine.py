@@ -329,12 +329,8 @@ class MultiscaleDiscriminator(nn.Module):
                     for j in range((n_layers*2)+3):
                         setattr(self, 'scale'+str(i)+'_layer'+str(j), getattr(netD, 'model'+str(j)))         
                 else:
-                    if self.self_attention:
-                        for j in range(n_layers+4):
-                            setattr(self, 'scale'+str(i)+'_layer'+str(j), getattr(netD, 'model'+str(j)))         
-                    else:
-                        for j in range(n_layers+2):
-                            setattr(self, 'scale'+str(i)+'_layer'+str(j), getattr(netD, 'model'+str(j)))                           
+                    for j in range(n_layers+2):
+                        setattr(self, 'scale'+str(i)+'_layer'+str(j), getattr(netD, 'model'+str(j)))                           
             else:
                 setattr(self, 'layer'+str(i), netD.model)
 
