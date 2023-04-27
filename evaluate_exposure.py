@@ -76,13 +76,13 @@ for i in tqdm(range(len(predicted_images))):
 if args.metric == "PSNR" or args.metric == "all":
 	PSNR = PSNR / len(predicted_images)
 	print("PSNR: {}" .format(PSNR))
-if args.metric == "L1" or args.metric = "all":
+if args.metric == "L1" or args.metric == "all":
 	L1 = L1 / len(predicted_images)
 	print("L1: {}" .format(L1))
-if args.metric == "L2" or args.metric = "all":
+if args.metric == "L2" or args.metric == "all":
 	L2 = L2 / len(predicted_images)
 	print("L2: {}" .format(L2))
-if args.metric == "SSIM" or args.metric = "all":
+if args.metric == "SSIM" or args.metric == "all":
 	SSIM = SSIM / len(predicted_images)
 	print("SSIM: {}" .format(SSIM))
 print("DONE!")
