@@ -10,9 +10,9 @@ This paper is published in [CVPR 2022](https://cvpr2022.thecvf.com/) [NTIRE Work
 
 ### TODO ###
 
-- Demos
+- Prerequisite
 
-## Prerequests ##
+## Prerequisite ##
 
 ## Datasets ##
 
