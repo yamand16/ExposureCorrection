@@ -90,6 +90,10 @@ We also employed three different state-of-the-art portrait matting models that d
 
 This code is based on [Pix2PixHD](https://github.com/NVIDIA/pix2pixHD) implementation. We would like to thanks the authors for sharing their valuable codes.
 
+## License Agreement ##
+
+- This repository with the provided code and pretrained model is available for non-commercial research purposes only.
+
 ## References ##
 
 [1] Afifi, Mahmoud, et al. "Learning multi-scale photo exposure correction." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2021.
