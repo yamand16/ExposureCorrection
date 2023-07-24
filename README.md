@@ -47,7 +47,7 @@ CUDA_VISIBLE_DEVICES="0" python train.py --name experiment_name --checkpoints_di
 
 ## Testing ##
 
-Download the pretrained model from [this link](https://drive.google.com/file/d/1VYC5hpRQNBxlTyQIAqlieVBhtBSOkv0t/view?usp=sharing).
+Download the pretrained model from [this link](https://drive.google.com/file/d/1VYC5hpRQNBxlTyQIAqlieVBhtBSOkv0t/view?usp=sharing) and put under `checkpoints` folder.
 
 ```python
 CUDA_VISIBLE_DEVICES="0" python test.py --ntest 1000 --results_dir exposure_output --checkpoints_dir checkpoints/100_net_G.pth --name exposure_correction_experiment --loadSize 256 --fineSize 256 --dataroot dataset/exposure/test --dir_A INPUT_Images --no_flip --label_nc 3 --how_many 1000 --phase_test_type test_all --which_epoch 100 --netG global --ngf 64 --n_downsample_global 4 --n_blocks_global 9 --batchSize 1
@@ -71,7 +71,7 @@ HR versions of the presented figures in the paper are available under *images* f
 
 ## Application - Portrait Matting ##
 
-We also tested the effect of our exposure correction model on portrait matting task. For this, we utilized four real-world portrait matting dataset and manipulated the exposure settings of these images by using Adobe Photoshop Lightroom. As in exposure correction dataset, we used -1.5, -1, +1, +1.5 EVs. We also utilized -2.5, -2, +2, +2.5 EVs to perform further test to evaluate the generalization performance of the exposure correction model. 
+We also tested the effect of our exposure correction model on portrait matting task. For this, we utilized four real-world portrait matting datasets and manipulated the exposure settings of these images by using Adobe Photoshop Lightroom. As in exposure correction dataset, we used -1.5, -1, +1, +1.5 EVs. Moreover, we also utilized -2.5, -2, +2, +2.5 EVs to perform further test to evaluate the generalization performance of the exposure correction model, especially under the more difficult conditions. 
 
 Dataset   | Number of images
 :------- | :--------------:
