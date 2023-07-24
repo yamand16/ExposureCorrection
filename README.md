@@ -47,9 +47,10 @@ CUDA_VISIBLE_DEVICES="0" python train.py --name experiment_name --checkpoints_di
 
 ## Testing ##
 
+Download the pretrained model from [this link](https://drive.google.com/file/d/1VYC5hpRQNBxlTyQIAqlieVBhtBSOkv0t/view?usp=sharing).
 
 ```python
-CUDA_VISIBLE_DEVICES="0" python test.py --ntest 1000 --results_dir exposure_output --checkpoints_dir checkpoints --name exposure_correction_experiment --loadSize 256 --fineSize 256 --dataroot dataset/exposure/test --dir_A INPUT_Images --no_flip --label_nc 3 --how_many 1000 --phase_test_type test_all --which_epoch 100 --netG global --ngf 64 --n_downsample_global 4 --n_blocks_global 9 --batchSize 1
+CUDA_VISIBLE_DEVICES="0" python test.py --ntest 1000 --results_dir exposure_output --checkpoints_dir checkpoints/100_net_G.pth --name exposure_correction_experiment --loadSize 256 --fineSize 256 --dataroot dataset/exposure/test --dir_A INPUT_Images --no_flip --label_nc 3 --how_many 1000 --phase_test_type test_all --which_epoch 100 --netG global --ngf 64 --n_downsample_global 4 --n_blocks_global 9 --batchSize 1
 ```
 
 ## Evaluation ##
