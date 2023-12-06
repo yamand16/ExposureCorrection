@@ -6,7 +6,19 @@
 
 <sup>1</sup>Karlsruhe Institute of Technology, <sup>2</sup>Istanbul Technical University, <sup>3</sup>Carnegie Mellon University
 
-This paper is published in [CVPR 2022](https://cvpr2022.thecvf.com/) [NTIRE Workshop](https://data.vision.ee.ethz.ch/cvl/ntire22/). If you use our code or the paper is helpful for your research, please cite our paper.
+This paper is published in [CVPR 2022](https://cvpr2022.thecvf.com/) [NTIRE Workshop](https://data.vision.ee.ethz.ch/cvl/ntire22/). If you use our code or the paper is helpful for your research, please cite [our paper](https://openaccess.thecvf.com/content/CVPR2022W/NTIRE/papers/Eyiokur_Exposure_Correction_Model_To_Enhance_Image_Quality_CVPRW_2022_paper.pdf).
+
+## Citation ##
+
+```
+@inproceedings{eyiokur2022exposure,
+  title={Exposure correction model to enhance image quality},
+  author={Eyiokur, F and Yaman, Dogucan and Ekenel, Hazim Kemal and Waibel, Alexander},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={676--686},
+  year={2022}
+}
+```
 
 ### TODO ###
 
