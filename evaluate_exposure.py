@@ -73,11 +73,11 @@ for i in tqdm(range(len(predicted_images))):
 	if args.metric == "PSNR" or args.metric == "all":
 		MSE = L2_distance(img1, img2)
 		PSNR += calculate_PSNR(MSE, MAX_pixel=1)
-	if args.metric == "L1" or args.metric = "all":
+	if args.metric == "L1" or args.metric == "all":
 		L1 += L1_distance(img1, img2)
-	if args.metric == "L2" or args.metric = "all":
+	if args.metric == "L2" or args.metric == "all":
 		L2 += L2_distance(img1, img2)
-	if args.metric == "SSIM" or args.metric = "all":
+	if args.metric == "SSIM" or args.metric == "all":
 		SSIM += calculate_SSIM(img1, img2, data_range=1, multichannel=True)
 
 if args.metric == "PSNR" or args.metric == "all":
